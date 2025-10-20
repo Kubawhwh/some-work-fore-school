@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle.net</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/sidebar.css" />
+    <link rel="stylesheet" href="./style/content.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <header class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Battle.net logo" />
+        </div>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="selected">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </nav>
+
+        <div class="user-panel">
+          <div class="user-info">
+            <img class="avatar" src="./assets/user.jpg" alt="user avatar" />
+            <span class="username">kubloI</span>
+            <span class="status online">Online</span>
+          </div>
+          <div class="user-actions">
+            <button class="settings-btn">⚙️</button>
+            <button class="notifications-btn">🔔</button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <aside class="sidebar">
+          <section class="favorites">
+            <h4>Favorites</h4>
+            <div class="game-icons">
+              <button class="game-icon"><img src="./assets/wow.svg" alt="WoW" /></button>
+              <button class="game-icon"><img src="./assets/diablo4.svg" alt="Diablo IV" /></button>
+              <button class="game-icon"><img src="./assets/cod.svg" alt="Call of Duty" /></button>
+              <button class="add-game">+</button>
+            </div>
+          </section>
+          <section class="friends">
+            <h4>Friends</h4>
+            <ul class="friend-list">
+              <li class="friend online">
+                <img src="./assets/friend1.jpg" alt="friend avatar" />
+                <span class="name">sir1904</span>
+                <span class="status">Mobile</span>
+              </li>
+              <li class="friend offline">
+                <img src="./assets/friend2.jpg" alt="friend avatar" />
+                <span class="name">Fantonex</span>
+                <span class="status">Offline for 1 day</span>
+              </li>
+            </ul>
+          </section>
+        </aside>
+        <main class="main-content">
+          <section class="banner">
+            <img src="./assets/diablo-immortal.jpg" alt="Diablo Immortal banner" />
+            <div class="banner-info">
+              <h1>Diablo Immortal</h1>
+              <p>Enter Hallow’s Wake — where the dead rise and rewards await.</p>
+              <button class="cta-btn">Play Free Now</button>
+            </div>
+          </section>
+          <section class="games-grid">
+            <article class="game-tile">
+              <img src="./assets/overwatch.jpg" alt="Overwatch 2" />
+              <div class="info">
+                <h3>Overwatch 2</h3>
+                <p>Play the new season</p>
+              </div>
+            </article>
+            <article class="game-tile">
+              <img src="./assets/wow.jpg" alt="World of Warcraft" />
+              <div class="info">
+                <h3>World of Warcraft</h3>
+                <p>Legion Remix</p>
+              </div>
+            </article>
+            <article class="game-tile">
+              <img src="./assets/diablo-immortal.jpg" alt="Diablo Immortal" />
+              <div class="info">
+                <h3>Diablo Immortal</h3>
+                <p>Hallow’s Wake now live</p>
+              </div>
+            </article>
+            <article class="game-tile">
+              <img src="./assets/hearthstone.jpg" alt="Hearthstone" />
+              <div class="info">
+                <h3>Hearthstone</h3>
+                <p>Get the new bundle</p>
+              </div>
+            </article>
+          </section> 
+          <section class="recommended">
+            <h2>Recommended</h2>
+            <div class="recommendation-list">
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <button class="shop-btn">Visit Shop</button>
+        <button class="chat-btn">Chats and Groups</button>
+      </footer>
+    </div>
+  </body>
+</html>
