@@ -1,8 +1,196 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0e0e10;
   color: #fff;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1d;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.main-nav a.selected,
+.main-nav a:hover {
+  color: #00aaff;
+}
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.status.online {
+  color: #4caf50;
+  font-size: 0.9em;
+}
+
+.user-actions button {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.user-actions button:hover {
+  color: #00aaff;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #141416;
+  padding: 20px;
+  border-right: 1px solid #333;
+}
+
+.sidebar h4 {
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+.game-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.game-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.add-game {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.friend-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.friend img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.banner-info h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.banner-info p {
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1a1a1d;
+  padding: 15px 0;
+  border-top: 1px solid #333;
+}
+
+.footer button {
+  background-color: #00aaff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer button:hover {
+  background-color: #0090e0;
+}

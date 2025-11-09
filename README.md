@@ -1,1 +1,2 @@
 # some-work-fore-school
+ Przaca jest 'zrobiona' I wiem że mogła wyjść lepiej. W banderze z Diablo pomógł mi Ai i to zrombał a że nie wiem jak to działa jeszcze to zostawiłem to tak bojąc się że coś zepsuje. Nie zasługuje na 6 ale był bym wdięczny jagbym mógł zdać.

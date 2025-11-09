@@ -4,15 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Battle.net</title>
+
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="stylesheet" href="./style/components.css" />
   </head>
 
   <body>
+    <style>
+      img[src^="/assets/"] {
+        width: 30px;
+        height: 20px;
+        object-fit: cover;
+        display: inline-block;
+      }
+
+      .banner img,
+      .games-grid .game-tile img,
+      .recommended .recommendation-item img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    </style>
+
     <div class="app">
       <header class="navbar">
         <div class="logo">
-          <img src="" alt="" />
+          <img src="/assets/Battlenet.png" alt="Battle.net logo" />
         </div>
 
         <nav class="main-nav">
@@ -25,9 +45,15 @@
 
         <div class="user-panel">
           <div class="user-info">
-            <img class="avatar" src="" alt="" />
-            <span class="username">kubloI</span>
-            <span class="status online">Online</span>
+            <img
+              class="avatar"
+              src="/assets/Kublol.png"
+              alt="Avatar użytkownika"
+            />
+            <div>
+              <span class="username">kubloI</span>
+              <span class="status online">Online</span>
+            </div>
           </div>
           <div class="user-actions">
             <button class="settings-btn">⚙️</button>
@@ -35,7 +61,188 @@
           </div>
         </div>
       </header>
+
+      <div class="content">
+        <aside class="sidebar">
+          <section class="favorites">
+            <h4>Favorites</h4>
+            <div class="game-icons">
+              <button class="game-icon">
+                <img src="/assets/WordOfWarcraft.png" alt="World of Warcraft" />
+              </button>
+              <button class="game-icon">
+                <img src="/assets/DiabloIV.png" alt="Diablo IV" />
+              </button>
+              <button class="game-icon">
+                <img src="/assets/CallOfDuty.png" alt="Call of Duty" />
+              </button>
+              <button class="add-game">+</button>
+            </div>
+          </section>
+
+          <section class="friends">
+            <h4>Friends</h4>
+            <ul class="friend-list">
+              <li class="friend online">
+                <img src="/assets/sir.png" alt="avatar znajomego" />
+                <div>
+                  <span class="name">sir1904</span>
+                  <span class="status">Mobile</span>
+                </div>
+              </li>
+              <li class="friend offline">
+                <img src="/assets/Fantonex.png" alt="avatar znajomego" />
+                <div>
+                  <span class="name">Fantonex</span>
+                  <span class="status">Offline for 1 day</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <main class="main-content">
+          <section class="banner">
+            <img
+              src="/assets/DiabloImmortal.png"
+              alt="Diablo Immortal banner"
+            />
+            <div class="banner-info">
+              <h1>Diablo Immortal</h1>
+              <p>
+                Enter Hallow’s Wake — where the dead rise and rewards await.
+              </p>
+              <button class="cta-btn">Play Free Now</button>
+            </div>
+          </section>
+
+          <section class="games-grid">
+            <article class="game-tile">
+              <img src="/assets/Overwach2.png" alt="Overwatch 2" />
+              <div class="info">
+                <h3>Overwatch 2</h3>
+                <p>Play the new season</p>
+              </div>
+            </article>
+
+            <article class="game-tile">
+              <img src="/assets/WordOfWarcraft.png" alt="World of Warcraft" />
+              <div class="info">
+                <h3>World of Warcraft</h3>
+                <p>Legion Remix</p>
+              </div>
+            </article>
+
+            <article class="game-tile">
+              <img src="/assets/DiabloImmortal.png" alt="Diablo Immortal" />
+              <div class="info">
+                <h3>Diablo Immortal</h3>
+                <p>Hallow’s Wake now live</p>
+              </div>
+            </article>
+
+            <article class="game-tile">
+              <img src="/assets/Hearthstone.png" alt="Hearthstone" />
+              <div class="info">
+                <h3>Hearthstone</h3>
+                <p>Get the new bundle</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="recommended">
+            <h2>Recommended</h2>
+            <div class="recommendation-list">
+              <article class="recommendation-item">
+                <img src="/assets/DiabloIV.png" alt="Diablo IV" />
+                <div class="info">
+                  <h3>Diablo IV</h3>
+                  <p>Pre-purchase now</p>
+                </div>
+              </article>
+
+              <article class="recommendation-item">
+                <img src="/assets/CallOfDuty.png" alt="Call of Duty" />
+                <div class="info">
+                  <h3>Call of Duty</h3>
+                  <p>New season live</p>
+                </div>
+              </article>
+
+              <article class="recommendation-item">
+                <img src="/assets/Starcraft2.png" alt="StarCraft II" />
+                <div class="info">
+                  <h3>StarCraft II</h3>
+                  <p>Free to play</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="footer">
+        <button class="shop-btn">Visit Shop</button>
+        <button class="chat-btn">Chats and Groups</button>
+      </footer>
     </div>
   </body>
-</html>
+  <style>
+    img[src^="/assets/"] {
+      width: 30px;
+      height: 20px;
+      object-fit: cover;
+      display: inline-block;
+    }
 
+    .favorites .game-icons .game-icon {
+      width: 56px;
+      height: 56px;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+    .favorites .game-icons .game-icon img,
+    .friend-list .friend img,
+    .user-panel .avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .friend-list .friend {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .friend-list .friend img {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+    }
+
+    .banner img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .games-grid .game-tile img,
+    .recommended .recommendation-item img {
+      width: 50%;
+      max-width: 50%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .games-grid .game-tile,
+    .recommended .recommendation-item {
+      text-align: center;
+    }
+  </style>
+</html>

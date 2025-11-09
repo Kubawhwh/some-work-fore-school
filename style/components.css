@@ -1,0 +1,66 @@
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.game-tile {
+  background-color: #18181b;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-tile img {
+  width: 100%;
+  display: block;
+}
+
+.game-tile:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.game-tile .info {
+  padding: 10px;
+}
+
+.game-tile h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.game-tile p {
+  margin: 4px 0 0;
+  color: #aaa;
+}
+
+.cta-btn {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s; /*Czemu jesteś czerwony backgroundzie?*/
+}
+
+.cta-btn:hover {
+  background-color: #0090e0;
+}
+
+.recommended {
+  margin-top: 40px;
+}
+
+.recommended h2 {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.recommendation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
